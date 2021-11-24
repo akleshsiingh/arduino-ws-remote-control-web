@@ -1,0 +1,64 @@
+
+.throttle-controller{
+    border: 5px solid black;
+    display: inline-block;
+    border-radius: 150px;
+}
+
+#throttle{
+    -webkit-appearance: slider-vertical;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* JOYSTICK */
+.joy-stick{
+    margin-top: 50px;
+}
+
+.speed{
+    height: 200px;
+    width: 200px;
+    border: 2px solid blue;
+    border-radius: 100%;
+    position: relative;
+}
+
+.lever{
+    background: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.simple{
+    display: flex;
+    align-items: center;
+}
+
+.direction{
+    margin-left: 50px;
+    border: 2px solid green;
+    display: flex;
+}
+
+#direction-control{
+    height: 200px;
+    width: 200px;
+}
+
+.left{
+    margin-left: 10rem;
+    margin-right: 20px;
+}
+.left,.right{
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background: rebeccapurple;
+
+}

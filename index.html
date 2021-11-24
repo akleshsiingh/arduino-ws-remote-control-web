@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Client</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./controller.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <ul class="toolbar">
+                <li class="item">
+                    <input type="text" id="serverAddress" placeholder="enter server address">
+                    <button class="btn" id="connect">Connect</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="response" id="response">
+
+            </div>
+            <textarea id="cmdInputArea" cols="30" rows="10"></textarea>
+            <button class="btn btn-send" id="sendCmd">Send CMD</button>
+
+            <div class="battery-container">
+                <div class="battery">
+                    <div class="battery-level"></div>
+                </div>
+            </div>
+            <div id="percentage"></div>
+        </div>
+
+        <div class="controller">
+           <div class="simple">
+            <div class="throttle-controller">
+                <input type="range" id="throttle" min="0" max="0" class="slider">
+            </div>
+
+          <div class="direction">
+            <!-- <div class="left">LEFT</div>
+            <div class="right">RIGHT</div> -->
+            <input type="range" id="direction-control" min="0" class="slider">
+          </div>
+            
+
+           </div>
+
+            <div class="joy-stick">
+                <div class="speed">
+                    <div class="lever"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./joystick.js" ></script>
+    <script type="module" src="scripts.js"></script>
+    <script src="./index.js" type="module"></script>
+
+</body>
+
+</html>

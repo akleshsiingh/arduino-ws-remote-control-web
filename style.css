@@ -1,0 +1,66 @@
+body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto 50px auto;
+}
+
+.toolbar{
+    list-style: none;
+}
+
+#serverAddress{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.content{
+    width: 500px;
+    margin-top: 20px;
+}
+
+.content textarea{
+    width: 100%;
+}
+
+/* battery */
+
+.battery-container{
+    width: 400px;
+
+    position: relative;
+    margin-top: 50px;
+}
+
+.battery{
+    width: 350px;
+    border: 10px solid grey;
+    height: 74px;
+}
+
+.battery-container::after{
+    content: '';
+    height: 40px;
+    width: 10px;
+    background: grey;
+    position: absolute;
+    left: 360px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.battery-level{
+    background-color: red;
+    width: 10%;
+    height: 100%;
+}
+
+#percentage{
+    margin-top: 20px;
+    letter-spacing: 2.2px;
+}
